@@ -6,6 +6,7 @@ const user = {
     age: 13   
 }
 
-let userClone = {...user};
-delete userClone.password;
+const {id, first_name, last_name, age} = user;
+const userClone = {id, first_name, last_name, age};
+
 console.log(userClone);
